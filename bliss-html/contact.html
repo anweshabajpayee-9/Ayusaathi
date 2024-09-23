@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Ayusaathi</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <div class="full_bg">
+         <!-- header -->
+         <header class="header-area">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class=" col-md-3 col-sm-3">
+                     <div class="logo">
+                        <a href="index.html">Ayusaath!</a>
+                     </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="service.html">AyuSanchalan</a></li>
+                              
+                              <li><a class="active" href="contact.html">AyuSampark</a></li>
+                              <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                              <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- end header inner -->
+      </div>
+      <!-- end banner -->
+      <!-- appointment -->
+      <div class="appointment">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="titlepage text_align_center">
+                     <h2>Contact Us</h2>
+                     <p>"Connect to Explore Modern Ayurveda."</p>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <form id="request" class="main_form" onsubmit="validate()">
+                     <div class="row">
+                        <div class="col-md-6 ">
+                           <input class="form_control" placeholder="Your name" type="type" name=" Name" id="Username"> 
+                        </div>
+                        <div class="col-md-6">
+                           <input class="form_control" placeholder="Email" type="type" name="Email" id="Email"> 
+                        </div>
+                        <div class="col-md-6">
+                           <input class="form_control" placeholder="Phone Number" type="type" name="Phone Number" id="Mobile">                          
+                        </div>
+                        
+                        <div class="col-md-6 ">
+                           <input class="form_control" placeholder=" Enter Password" type="type" name=" Time" id="Password"> 
+                        </div>
+                        
+                        <div class="col-md-12">
+                           <textarea style=" color: #d0d0cf;" class="textarea" placeholder="Message" type="type" name="message" id="Address">message </textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send Now</button>
+                        </div>
+                     </div>
+                     <script>
+                        function validate(){
+    var username= document.getElementById('Username').value;
+    if (username === "") {
+    alert('Please Enter a Username');
+} 
+else if (!/^\D*$/.test(username)) {
+    alert('Username should not contain any digits');
+}
+var Email = document.getElementById('Email').value;
+ if (Email === "") {
+        alert('Please Enter a valid Email ID');
+    } else if (!/^[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-]+\.[a-z]{2,3}$/.test(Email)) {
+        alert('Email Incorrect');
+    }
+    var Mobile = document.getElementById('Mobile').value;
+ if (Mobile === "") {
+        alert('Please Enter a valid Mobile No.');
+    } else if (!/^[89][0-9]{9}$/.test(Mobile)) {
+        alert('Mobile No. Incorrect');
+    }
+    var Address = document.getElementById('Address').value;
+ if (Address === "") {
+        alert('Please Enter a valid Address');
+    }
+
+    var Password = document.getElementById('Password').value;
+ if (Password === "") {
+        alert('Please Enter a valid Password');
+    } else if (!/^[a-zA-Z0-9_\-\.][@][6]{6}$/.test(Password)) {
+        alert('Password Incorrect');
+    }
+}
+                     </script>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end appointment -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-7">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                           <div class="hedingh3 text_align_left">
+                              <h3>About</h3>
+                              <p>"Ayusathi integrates Ayurveda with cutting-edge technology to provide comprehensive
+                                 wellness solutions for users.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Services</h3>
+                              <p>"Discover dosha-aligned diet plans, Kama Ayurveda products, herbal nutrition, healing
+                                 herbs, yoga centers, wellness centers, and naturopathy for holistic well-being in one
+                                 platform."</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Menu</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li><a href="service.html">Service</a></li>
+                           
+                                 <li><a href="contact.html">Contact us</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Newsletter</h3>
+                              <form id="colof" class="form_subscri">
+                                 <input class="newsl" placeholder="Email" type="text" name="Email">
+                                 <button class="subsci_btn">Subscribe</button>
+                              </form>
+                              <ul class="top_infomation">
+                                 <li><i class="fa fa-phone" aria-hidden="true"></i>
+                                    +91 9356333826
+                                 </li>
+                                 <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="Javascript:void(0)">ayusaathi@gmail.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="follow text_align_center">
+                           <h3>Follow Us</h3>
+                           <ul class="social_icon ">
+                              <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/">Anwesha Bajpayee</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
